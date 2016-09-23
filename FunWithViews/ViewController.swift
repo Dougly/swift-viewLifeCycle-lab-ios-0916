@@ -33,14 +33,13 @@ class ViewController: UIViewController {
         clearSquares()
     }
     
-    
-    @IBAction func dieButtonTapped(_ sender: AnyObject) {
-        let roll = randomDiceRoll()
-        showSquares(roll: roll)
-        showScore(roll: roll)
-        
-        
+
+    @IBAction func pressedButton(_ sender: AnyObject) {
+        let randomRoll = randomDiceRoll()
+        showSquares(roll: randomRoll)
+        showScore(roll: randomRoll)
     }
+ 
     
     //shows black squares according to dice roll
     func showSquares (roll: Int) {
@@ -90,10 +89,12 @@ class ViewController: UIViewController {
             
         }
     }
+
     
     //displays the score
     func showScore (roll: Int) {
         let rollAsString = String(roll)
+        print (rollAsString)
         if purple.isHidden {
             purple.isHidden = false
             purple.text = rollAsString
@@ -114,6 +115,7 @@ class ViewController: UIViewController {
             teal.text = rollAsString
         } else {
             clearScores()
+            clearSquares()
         }
     }
     

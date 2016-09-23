@@ -14,26 +14,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KJ2-o6-dr5">
-                                <frame key="frameInset" minX="162" minY="495" width="68" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="🎲"/>
-                                <connections>
-                                    <action selector="dieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gja-aB-nwd"/>
-                                    <action selector="sixSidedDie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DQM-Wr-TzI"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" id="04h-pa-l5L" userLabel="Top Left">
                                 <frame key="frameInset" minX="29" minY="38" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" id="MpH-Yh-BIf">
-                                        <frame key="frameInset" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="Yvc-R7-C8b">
@@ -114,6 +97,15 @@
                                 <color key="textColor" red="0.36044613096002875" green="1" blue="0.37479815883869938" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aAs-c3-OvG">
+                                <frame key="frameInset" minX="164" minY="489" width="65" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="🎲"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbh-T7-45l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -128,7 +120,7 @@
                         <outlet property="purple" destination="10a-IO-LhC" id="2kN-l0-Cxo"/>
                         <outlet property="red" destination="nWg-1f-oPk" id="STE-Uw-eKW"/>
                         <outlet property="teal" destination="gbd-E0-5SC" id="i7b-Cy-F27"/>
-                        <outlet property="topLeft" destination="MpH-Yh-BIf" id="g7O-OG-Ase"/>
+                        <outlet property="topLeft" destination="04h-pa-l5L" id="5Mo-og-NmQ"/>
                         <outlet property="topRight" destination="5V9-3v-9pq" id="8X4-VE-qbN"/>
                         <outlet property="yellow" destination="abo-Tb-aP1" id="Rfw-0P-4Eq"/>
                     </connections>
